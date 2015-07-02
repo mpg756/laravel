@@ -2,4 +2,6 @@
 .env.*.php
 .env.php
 .env
-.idea/
+/.idea
+/node_modules
+Homestead.yaml
