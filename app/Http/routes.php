@@ -11,15 +11,21 @@
 |
 */
 
+use App\Lib\Phone\Smartphone;
+
 Route::get('/', function () {
     return view('welcome');
-    //return 'Hello worldd!';
 });
-Route::get('/phone', function()
-{
-    return "Hello Laravel";
-});
+
+
+Route::get('/phone','PagesController@phone');
+
+
 Route::get('/shorten', function()
 {
 
 });
+
+
+
+Route::get('about','PagesController@about');

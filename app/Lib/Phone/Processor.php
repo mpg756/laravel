@@ -13,7 +13,7 @@ class Processor {
     private $_processorName = '';
     private $_processorCores = 0;
 
-    public function __construct($name, $cores){
+    public function __construct($name, $cores = 4){
         if(is_string($name) && is_int($cores)){
             $this->_processorName = $name;
             $this->$_processorCores = $cores;
