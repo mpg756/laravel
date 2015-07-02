@@ -15,7 +15,11 @@ Route::get('/', function () {
     return view('welcome');
     //return 'Hello worldd!';
 });
-Route::get('', function()
+Route::get('/phone', function()
+{
+    return "Hello Laravel";
+});
+Route::get('/shorten', function()
 {
 
 });
