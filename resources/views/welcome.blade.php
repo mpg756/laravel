@@ -45,6 +45,7 @@
         <div class="container">
             <ul>
                 <li><a href="/phone">Смартфон</a></li>
+                <li><a href="/shorten">Bit.ly</a></li>
             </ul>
             <div class="content">
                 <div class="title">Laravel 5</div>

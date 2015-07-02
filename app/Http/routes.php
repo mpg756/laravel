@@ -23,7 +23,7 @@ Route::get('/phone','PagesController@phone');
 
 Route::get('/shorten', function()
 {
-
+    dd(Bitly::shorten('http://google.com/'));
 });
 
 
