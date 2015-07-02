@@ -16,7 +16,7 @@ class Processor {
     public function __construct($name, $cores = 4){
         if(is_string($name) && is_int($cores)){
             $this->_processorName = $name;
-            $this->$_processorCores = $cores;
+            $this->_processorCores = $cores;
         }
     }
     public function __tostring(){
