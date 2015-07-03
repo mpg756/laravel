@@ -18,12 +18,7 @@ class PagesController extends Controller
         return view('about',['user' => 'David']);
     }
 
-    public function __construct(Smartphone $smartphone){
-
-        $this->_phone = $smartphone;
-    }
-
     public function phone(){
-        echo $this->_phone;
+
     }
 }

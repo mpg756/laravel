@@ -18,7 +18,10 @@ Route::get('/', function () {
 });
 
 
-Route::get('/phone','PagesController@phone');
+
+Route::get('/phone', function(){
+    return
+});
 
 
 Route::get('/shorten/{name?}', function($name = null)
