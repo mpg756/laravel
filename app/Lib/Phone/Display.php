@@ -12,7 +12,7 @@ namespace App\Lib\Phone;
 class Display {
     private $_resolution = '';
 
-    public function __construct($resolution){
+    public function __construct($resolution = '800x600'){
         $this->_resolution = $resolution;
     }
 

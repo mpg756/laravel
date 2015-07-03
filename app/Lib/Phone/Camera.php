@@ -12,7 +12,7 @@ namespace App\Lib\Phone;
 class Camera {
     private $_resolution = 0;
 
-    public function __construct($resolution){
+    public function __construct($resolution = 5){
         if(is_int($resolution))
         {
             $this->_resolution = $resolution;

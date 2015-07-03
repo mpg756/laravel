@@ -12,7 +12,7 @@ namespace App\Lib\Phone;
 class Battery {
     private $_capacity = '';
 
-    public function __construct($capacity){
+    public function __construct($capacity = 2500){
         $this->_capacity = $capacity;
     }
     public function __tostring(){

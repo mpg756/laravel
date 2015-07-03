@@ -20,7 +20,7 @@ Route::get('/', function () {
 
 
 Route::get('/phone', function(){
-    return
+
 });
 
 
