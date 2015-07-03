@@ -21,15 +21,17 @@ Route::get('/', function () {
 Route::get('/phone','PagesController@phone');
 
 
-Route::get('/shorten/{name}', function($name)
+Route::get('/shorten/{name?}', function($name = null)
 {
-    dd(Bitly::shorten($name));
+    if($name === null){
+        return 'Enter link';
+    }
+    else{
+        dd(Bitly::shorten($name));
+    }
+
 });
 
-Route::get('/shorten/', function()
-{
-    return 'Enter link';
-});
 
 
 
