@@ -30,8 +30,8 @@ class SmartphoneServiceProvider extends ServiceProvider {
      */
     public function register()
     {
-        $this->app->bind('smart', function(Phone\Processor $processor, Phone\Display $display, Phone\Camera $camera, Phone\Battery $battery){
-            return new Phone\Smartphone($processor,$display,$camera,$battery);
+        $this->app->bind('smart', function(){
+            return new Phone\Smartphone(new Phone\Processor, new Phone\Display, new Phone\Camera, new Phone\Battery);
         });
     }
 }
