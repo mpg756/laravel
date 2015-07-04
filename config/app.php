@@ -144,6 +144,8 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        App\Providers\SmartphoneServiceProvider::class,
+
         Jelovac\Bitly4laravel\Bitly4laravelServiceProvider::class,
 
     ],
