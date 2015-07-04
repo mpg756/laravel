@@ -37,6 +37,4 @@ Route::get('/shorten/{name?}', function($name = null)
 });
 
 
-
-
 Route::get('about','PagesController@about');
