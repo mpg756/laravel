@@ -20,7 +20,6 @@ Route::get('/', function () {
 
 
 Route::get('/phone', function(){
-    App::register('SmartphoneServiceProvider');
     echo App::make('smart');
 });
 
