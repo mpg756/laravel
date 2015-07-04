@@ -11,7 +11,6 @@
 |
 */
 
-use App\Lib\Phone\Smartphone;
 
 Route::get('/', function () {
     return view('welcome');
